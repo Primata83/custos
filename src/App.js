@@ -4,11 +4,14 @@ import Contact from './components/pages/Contact'
 import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
 import Container from './components/layout/Container'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+
 
 function App() {
-  return (
-      
+  return (      
       <Router>
+        <Navbar/>
         <div>
           <Link to="/">Home</Link>
           <Link to="/contact">Contato</Link>
@@ -23,7 +26,7 @@ function App() {
             <Route path="/Company" exact element={<Company/>}/>
             <Route path="/NewProject" exact element={<NewProject/>}/>          
           </Routes>
-          <p>Footer</p>
+          <Footer/>
         </Container>        
       </Router>    
   )
