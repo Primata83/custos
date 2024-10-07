@@ -8,5 +8,19 @@
 .list {
     display: flex;
     list-style: none;
-    align-items: center;
+    
+
+}
+
+.item {
+    margin-right: 1em;    
+}
+
+.item a {
+    color: rgb(255, 200, 61);
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: rgb(255, 140, 0);
 }

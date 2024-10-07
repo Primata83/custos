@@ -5,24 +5,24 @@ import logo from '../imagens/bitReduzido.png'
 
 function Navbar () {
     return (
-        <nav class={styles.navbar}>
+        <nav className={styles.navbar}>
             <Container>
                 <Link to="/">
                     <img src={logo} alt="Costs" />
                 </Link>
-                <ul class={styles.list}>
-                    <li>
+                <ul className={styles.list}>
+                    <li className={styles.item}>
                         <Link to="/">Home</Link>
                     </li>
-                    <li>
-                        <Link to="/contact">Contato</Link>
+                    <li className={styles.item}>
+                        <Link to="projects">Projetos</Link>
                     </li>
-                    <li>
+                    <li className={styles.item}>
                         <Link to="/company">Empresa</Link>
                     </li>
-                    <li>
-                        <Link to="/newproject">NewProject</Link>   
-                    </li>             
+                    <li className={styles.item}>
+                        <Link to="/contact">Contato</Link>
+                    </li>                                                    
                 </ul>
             </Container>
         </nav>
