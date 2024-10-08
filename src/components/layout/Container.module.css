@@ -1,21 +1,13 @@
-.Container {
-    width: 1200px;
-    margin: 0 auto;
+.Container {    
+    /* AQUI TINHA WIDTH:1200px; */
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    flex-grow: 1; 
+    
+  
 }
 
 .min-height {
     min-height: 75vh;
-}
-
-.start {
-    justify-content: flex-start;
-}
-
-.column {
-    flex-direction: column;
-    justify-content: flex-start;
+    
 }

@@ -2,19 +2,19 @@
     background-color:rgb(34, 34, 34);
     color: #ffF;
     padding: 3em;
-    text-align: center;
+    text-align: center;   
     
 }
 
 .social_list {
     display:flex;
     justify-content:center;
-    list-style-type: none;
-    
+    list-style-type: none;   
 }
 
 .social_list li {
     margin: 0 2em;
+    align-items: center;    
 }
 
 .social_list li:hover {
