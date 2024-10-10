@@ -2,28 +2,21 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
-    padding: 1em;
-    
+    padding: 1em;    
 }
 
 .list {
     display: flex;
-    list-style: none;  
-    
-
-   
+    list-style: none;    
 }
 
 .item {
     margin-right: 1em;    
-    
-   
 }
 
 .item a {
-    color: rgb(255, 200, 61);
-    text-decoration: none;
-   
+    color: yellow;
+    text-decoration: none;   
 }
 
 .item a:hover {

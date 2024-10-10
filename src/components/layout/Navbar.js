@@ -1,14 +1,14 @@
 import {Link} from 'react-router-dom'
 import Container from './Container'
 import styles from './Navbar.module.css'
-import logo from '../imagens/bitReduzido.png'
+import logo from '../imagens/moeda.png'
 
 function Navbar () {
     return (
         <nav className={styles.navbar}>
             <Container>
                 <Link to="/">
-                    <img src={logo} alt="Costs" />
+                    <img src={logo} alt="Moeda" />
                 </Link>
                 <ul className={styles.list}>
                     <li className={styles.item}>
