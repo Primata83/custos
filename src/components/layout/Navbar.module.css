@@ -3,22 +3,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;   
- 
-    
+}
+
+.logo {
+    height: 120px;
+    width: 120px    
 }
 
 .list {
     display: flex;
     list-style: none;  
-    margin-left: 65rem;
-    
-    
+    margin-left: 65rem;    
 }
 
 .item {
     margin-right: 1em;    
-    
-    
 }
 
 .item a {
