@@ -17,9 +17,9 @@ function NewProject () {
             body: JSON.stringify(project),
         })
         .then((resp) => resp.json())
-        .then((data) => {            
+        .then((data) => {
             console.log(data)
-            history.push('/project', {message: 'Projeto criado com sucesso!'})
+            navigate('/project', { state: { message: 'Projeto criado com sucesso!' } }) // Atualizado aqui
         })
         .catch((err) => console.log(err))
     }

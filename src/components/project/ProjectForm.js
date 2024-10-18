@@ -17,6 +17,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         })
         .then((resp) => resp.json())
         .then((data) => {
+            console.log(data) //teste muito loco
             setCategories(data)
         })
         .catch((err) => console.log(err))
