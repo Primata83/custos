@@ -17,7 +17,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            console.log(data) //teste muito loco
+            console.log(data) 
             setCategories(data)
         })
         .catch((err) => console.log(err))
@@ -36,7 +36,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         setProject({ ...project,
             categoty:{
             id: e.target.value,
-            name:e.target.option[e.target.selectedIndex].text,
+            name: e.target.option[e.target.selectedIndex].text,
         },
       })  
     }
@@ -50,7 +50,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 placeholder="Insira o nome do projeto"
                 handleOnChange={handleChange}
                 value={project.name ? project.name : ''}
-            />
+            />.
             <Input
                 type="number"
                 text="Orçamento do projeto"
