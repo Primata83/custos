@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
 import Company from './components/pages/Company'
@@ -28,3 +28,9 @@ function App() {
 }
 
 export default App
+//json-server --watch db.json --port 5000 antes de iniciar a aplicação com npm start
+//json-server --watch db.json --port 5000 antes de iniciar a aplicação com npm start
+//json-server --watch db.json --port 5000 antes de iniciar a aplicação com npm start
+//json-server --watch db.json --port 5000 antes de iniciar a aplicação com npm start
+//json-server --watch db.json --port 5000 antes de iniciar a aplicação com npm start
+//json-server --watch db.json --port 5000 antes de iniciar a aplicação com npm start
