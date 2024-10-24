@@ -16,15 +16,10 @@ function NewProject () {
             },
             body: JSON.stringify(project),
         })
-        .then((resp) => {
-            if (!resp.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return resp.json();
-        })
+        .then((resp) => resp.json())
         .then((data) => {
             console.log(data)
-            navigate('/project', { state: { message: 'Projeto criado com sucesso!' } })  // Atualizado aqui
+            navigate('/projects', { state: { message: 'Projeto criado com sucesso!' } }) 
         })
         .catch((err) => console.log(err))
     }

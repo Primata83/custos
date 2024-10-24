@@ -2,9 +2,11 @@
     /* AQUI TINHA WIDTH:1200px; */
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
-    
-  
+    justify-content: space-between;   
+}
+
+.start {
+    justify-content: flex-start;
 }
 
 .min-height {
