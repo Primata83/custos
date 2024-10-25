@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "teste4",
-      "budget": "222",
+      "name": "teste1",
+      "budget": "111",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,59 +12,15 @@
       "id": 1
     },
     {
-      "name": "teste5",
-      "budget": "222",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
+      "name": "hudson",
+      "budget": "444",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "name": "teste6",
-      "budget": "222",
       "cost": 0,
       "services": [],
-      "id": 3
-    },
-    {
-      "name": "teste7",
-      "budget": "444",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "teste8",
-      "budget": "444",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "teste9",
-      "budget": "2222",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
+      "id": 2
     }
   ],
   "categories": [

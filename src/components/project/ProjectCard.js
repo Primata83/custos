@@ -1,0 +1,8 @@
+import styles from './ProjectCard.module.css'
+import { BsPencil, BsFillTranshFill } from 'react-icons/bs'
+
+function ProjectCard ({id, name, budget, category, handleRemove}) {
+    return <p>{name}</p>
+} 
+
+export default ProjectCard
