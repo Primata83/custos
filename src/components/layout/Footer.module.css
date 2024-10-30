@@ -1,8 +1,15 @@
 .footer{
     background-color: #222;
     color: #fff;
-    padding: 3em;
+    padding: 1em;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    position:end;
 }
 
 .social_list{
@@ -16,7 +23,7 @@
 }
 
 .social_list:hover{
-    color: #ffbb33;
+  color: rgb(255, 140, 0);
 }
 
 .social_list svg{
@@ -30,6 +37,6 @@
 
 .copy_right span{
     font-weight: bold;
-    color: #ffbb33;
+    color: rgb(255, 140, 0);
 }
     

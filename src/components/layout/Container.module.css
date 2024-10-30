@@ -1,13 +1,14 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 .container{
     width:1200px;
     display:flex;
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
-}
-
-.min-height {
-    min-height: 75%;
 }
 
 .start{
@@ -17,4 +18,8 @@
 .column {
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.min-height{
+    min-height:75%;
 }
