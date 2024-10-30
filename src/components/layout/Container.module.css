@@ -1,15 +1,20 @@
-.Container {    
-    /* AQUI TINHA WIDTH:1200px; */
-    display: flex;
-    flex-direction: wrap; 
-    justify-content: space-between;   
-}
-
-.start {
-    justify-content: flex-start;
+.container{
+    width:1200px;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .min-height {
-    min-height: 85vh;
-    
+    min-height: 75%;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
 }
