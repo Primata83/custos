@@ -6,17 +6,17 @@ import Container from '../layout/Container'
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
 
-function Projects () {
-    const [projects, setProjects] = useState({})
+function Projects() {
+    const [projects, setProjects] = useState([])
     const location = useLocation()
     let message = ''
+    
     if (location.state) {
         message = location.state.message
     }
 
     useEffect(() => {
-        
-        fetch ('http://localhost:5000/projects', {
+        fetch('http://localhost:5000/projects', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -29,24 +29,33 @@ function Projects () {
         })
         .catch((err) => console.log(err))
     }, [])
+
     return (
         <div className={styles.project_container}>
             <div className={styles.title_container}>
                 <h1>Meus projetos</h1>
-                <LinkButton to='/newproject' text ='Criar Projeto'/>
+                <LinkButton to='/newproject' text='Criar Projeto' />
             </div>
             {message && <Message type="success" msg={message} />}
             <Container customClass='start'>
-                {projects.lenght > 0 &&
+                {projects.length > 0 ? (
                     projects.map((project) => (
-                        <ProjectCard 
-                            id={project.id}                    
+                        <ProjectCard
+                            id={project.id}
                             name={project.name}
                             budget={project.budget}
-                            category={project.project.name}
+                            category={project.category.name}
                             key={project.id}
+                            handleRemove={(id) => {
+                                // Função para remover projeto (se necessária)
+                                const updatedProjects = projects.filter(project => project.id !== id)
+                                setProjects(updatedProjects)
+                            }}
                         />
-                    ))}
+                    ))
+                ) : (
+                    <p>Não há projetos disponíveis.</p>
+                )}
             </Container>
         </div>
     )

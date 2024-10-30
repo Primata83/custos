@@ -1,5 +1,11 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .project_container {
-    padding: 3em;
+    padding: 4em;
 }
 
 .title_container {
