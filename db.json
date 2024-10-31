@@ -23,17 +23,6 @@
       "id": 7
     },
     {
-      "name": "teste3",
-      "budget": "111",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
       "name": "teste4",
       "budget": "123",
       "category": {
@@ -43,6 +32,17 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "name": "3233",
+      "budget": "2222",
+      "cost": 0,
+      "services": [],
+      "id": 10
     }
   ],
   "categories": [
