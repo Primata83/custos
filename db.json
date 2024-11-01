@@ -32,17 +32,6 @@
       "cost": 0,
       "services": [],
       "id": 9
-    },
-    {
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "name": "3233",
-      "budget": "2222",
-      "cost": 0,
-      "services": [],
-      "id": 10
     }
   ],
   "categories": [
