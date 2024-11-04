@@ -7,6 +7,7 @@ import Projects from './components/pages/Projects'
 import Container from './components/layout/Container'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Project from './components/pages/Project'
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
             <Route path="/Projects" exact element={<Projects/>}/>
             <Route path="/Company" exact element={<Company/>}/>            
             <Route path="/contact" exact element={<Contact/>}/>            
-            <Route path="/NewProject" exact element={<NewProject/>}/>          
+            <Route path="/NewProject" exact element={<NewProject/>}/>        
+            <Route path="/Project/:id" exact element={<Project/>}/>     
           </Routes>
           <Footer/>
         </Container>        
