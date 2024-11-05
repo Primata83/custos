@@ -1,28 +1,27 @@
 import styles from './Project.module.css'
-import {useParams} from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
-function Project () {
-    const {id} = useParams()
+function Project() {
+    const { id } = useParams()
+    const [project, setProject] = useState({})
 
-    const[project, setProject] = useState([])
-
-    useEffect (() => {
-
-        fetch(`http://localhos:5000/project/${id}`,{
+    useEffect(() => {
+        fetch(`http://localhost:5000/projects/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             },
         })
-            .then((resp) => resp.json ())
-            .then((data) => {
-                setProject(data)
-            })
-            .catch((err) => console.log)
-        }, [id])
+        .then((resp) => resp.json())
+        .then((data) => {
+            console.log(data)
+            setProject(data)
+        })
+        .catch((err) => console.log(err))
+    }, [id])
 
-    return <p> Projeto </p>
+    return <p>{project.name}</p>
 }
 
 export default Project
