@@ -11,7 +11,7 @@ function Home () {
             </h1>  
             <p>Comece a gerenciar os seus projetos agora mesmo!</p>
             <LinkButton to='/newproject' text ='Criar Projeto'/>
-            <a href="/"></a>
+            <a href="/">Home</a>
             <img src={logo} alt="Custos"/>
         </section>
          
