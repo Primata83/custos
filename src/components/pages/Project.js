@@ -7,10 +7,12 @@ import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 function Project() {
     const { id } = useParams()
     const [project, setProject] = useState({})
+    const [services, setServices] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
@@ -26,13 +28,13 @@ function Project() {
             })
                 .then((resp) => resp.json())
                 .then((data) => {
-                    console.log(data)
                     setProject(data)
+                    setServices(data.services)
                 })
                 .catch((err) => console.log(err))
         }, 500)
     }, [id])
-
+//@@@ função que edita um projeto
     function editPost(project) {
         setMessage('')
 
@@ -58,7 +60,7 @@ function Project() {
             })
             .catch((err) => console.log(err))
     }
-
+//@@@ função que exibe pop up(mensagem)
     function createService(project) {
         if (!Array.isArray(project.services)) {
             project.services = []
@@ -78,6 +80,25 @@ function Project() {
             return false
         }
     }
+
+//@@@ adiciona custo total para o projeto
+    
+
+//@@@ ??????
+    fetch(`http://localhost:5000/projects${project.id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(project)
+    })
+    .then((resp) => resp.json())
+    .then((data) => {
+        setShowServiceForm(false)
+    })
+    .catch(err => console.log(err))
+
+    function removeService() {}
 
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
@@ -137,7 +158,17 @@ function Project() {
                         </div>
                         <h2>Serviços</h2>
                         <Container customClass="start">
-                            <p>Item de serviços</p>
+                            {services.lenght > 0 && 
+                            services.map((service) => (
+                                <ServiceCard
+                                    id={service.id}
+                                    name={service.name}
+                                    cost={service.cost}
+                                    description={service.description}
+                                    key={service.id}
+                                    handleRemove={removeService}
+                                />
+                            ))}
                         </Container>
                     </Container>
                 </div>
