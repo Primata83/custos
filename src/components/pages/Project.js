@@ -20,46 +20,47 @@ function Project() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch(`http://localhost:5000/projects/${id}`, {
-                method: 'GET',
+            fetch(`http://localhost:5000/projects/${id}`,{
+                method: "GET",
                 headers: {
-                    'Content-Type': 'application/json',
-                },
-            })
-                .then((resp) => resp.json())
-                .then((data) => {
-                    setProject(data)
-                    setServices(data.services)
-                })
-                .catch((err) => console.log(err))
-        }, 500)
-    }, [id])
-//@@@ função que edita um projeto
-    function editPost(project) {
-        setMessage('')
-
-        if (project.budget < project.cost) {
-            setMessage('O orçamento não pode ser menor que o custo do projeto')
-            setType('error')
-            return false
-        }
-
-        fetch(`http://localhost:5000/projects/${project.id}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json',
+                    'Content-Type': 'application/json'
             },
-            body: JSON.stringify(project),
         })
             .then((resp) => resp.json())
             .then((data) => {
                 setProject(data)
-                setShowProjectForm(false)
-                setMessage('Projeto atualizado!')
-                setType('success')
+                setServices(data.services)
             })
             .catch((err) => console.log(err))
+        }, 300)
+    }, [id])
+//@@@ função que edita um projeto
+function editPost(project) {
+    setMessage("")
+
+    if(project.budget < project.cost) {
+       setMessage("O orçamento não pode ser menor que o custo do projeto!")
+       setType("error")
+       return false
     }
+
+    fetch(`http://localhost:5000/projects/${project.id}`,{
+        method: 'PATCH',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(project),
+    })
+        .then((resp) => resp.json())
+        .then((data) => {
+            setProject(data)
+            setShowProjectForm(false)
+            setMessage("Projeto atualizado!")
+            setType("success")
+        })
+        .catch((err) => console.log(err))
+
+}
 //@@@ função que exibe pop up(mensagem)
     function createService(project) {
         if (!Array.isArray(project.services)) {
@@ -85,18 +86,18 @@ function Project() {
     
 
 //@@@ ??????
-    fetch(`http://localhost:5000/projects${project.id}`, {
+    fetch(`http://localhost:5000/projects/${project.id}`, {
         method: 'PATCH',
         headers: {
-            'Content-Type': 'application/json'
+           "Content-Type": "application/json",
         },
         body: JSON.stringify(project)
     })
-    .then((resp) => resp.json())
-    .then((data) => {
+        .then((resp) => resp.json())
+        .then((data) => {
         setShowServiceForm(false)
-    })
-    .catch(err => console.log(err))
+        })
+        .catch(err => console.log(err))
 
     function removeService() {}
 
@@ -158,7 +159,7 @@ function Project() {
                         </div>
                         <h2>Serviços</h2>
                         <Container customClass="start">
-                            {services.lenght > 0 && 
+                            {services.length > 0 && 
                             services.map((service) => (
                                 <ServiceCard
                                     id={service.id}
@@ -169,6 +170,7 @@ function Project() {
                                     handleRemove={removeService}
                                 />
                             ))}
+                            {services.length === 0 && <p>Não há serviços cadastrados.</p>}
                         </Container>
                     </Container>
                 </div>
