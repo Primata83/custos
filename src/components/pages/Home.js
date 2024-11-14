@@ -9,9 +9,9 @@ function Home () {
             <h1>
                 Bem-vindo ao <span>Custos</span>
             </h1>  
-            <p>Comece a gerenciar os seus projetos agora mesmo!</p>
+            <p>Comece a gerenciar seus projetos agora mesmo!</p>
             <LinkButton to='/newproject' text ='Criar Projeto'/>
-            <a href="/">Home</a>
+            <a href="/"></a>
             <img src={logo} alt="Custos"/>
         </section>
          
