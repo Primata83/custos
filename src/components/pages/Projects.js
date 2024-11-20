@@ -63,20 +63,22 @@ function Projects(){
             {projectMessage && <Message type="success" msg={projectMessage}/>}
             <Container customClass="start">
                 {projects.length > 0 &&
-                    projects.map((project) => (
-                        <ProjectCard
-                            id={project.id} 
-                            name={project.name}
-                            budget={project.budget}
-                            category={project.category.name}
-                            key={project.id}
-                            handleRemove={removeProject}
-                        />
-                    ))}
-                    {!removeLoading && <Loading />}
-                    {removeLoading && projects.length === 0 && (
-                        <p>Não há projetos cadastrados!</p>
-                    )}
+                    projects
+                        .filter(project => project.name && project.category && project.category.name)
+                        .map((project) => (
+                            <ProjectCard
+                                id={project.id} 
+                                name={project.name}
+                                budget={project.budget}
+                                category={project.category.name}
+                                key={project.id}
+                                handleRemove={removeProject}
+                            />
+                        ))}
+                {!removeLoading && <Loading />}
+                {removeLoading && projects.length === 0 && (
+                    <p>Não há projetos cadastrados!</p>
+                )}
             </Container>
         </div>
     )

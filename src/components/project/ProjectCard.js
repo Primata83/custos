@@ -8,14 +8,17 @@ function ProjectCard ({id, name, budget, category, handleRemove}) {
         handleRemove(id)
     }
 
+    // Adiciona um fallback para category
+    const safeCategory = category || 'Sem categoria';
+
     return (
         <div className={styles.project_card}>
             <h4>{name}</h4>
             <p>
                 <span>Orçamento:</span> R${budget}
             </p>
-            <p className={styles.cagory_text}>
-                <span className={`${styles[category.toLowerCase()]}`}></span> {category}
+            <p className={styles.category_text}>
+                <span className={`${styles[safeCategory.toLowerCase()] || ''}`}></span> {safeCategory}
             </p>
             <div className={styles.project_card_actions}>
                 <Link to={`/project/${id}`}>
