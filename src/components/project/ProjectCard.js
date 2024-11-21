@@ -1,6 +1,6 @@
-import {Link} from 'react-router-dom'
-import styles from './ProjectCard.module.css'
-import { BsPencil, BsFillTrashFill } from 'react-icons/bs'
+import {Link} from 'react-router-dom';
+import styles from './ProjectCard.module.css';
+import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 
 function ProjectCard ({id, name, budget, category, handleRemove}) {    
     const remove = (e) => {
@@ -8,7 +8,6 @@ function ProjectCard ({id, name, budget, category, handleRemove}) {
         handleRemove(id)
     }
 
-    // Adiciona um fallback para category
     const safeCategory = category || 'Sem categoria';
 
     return (

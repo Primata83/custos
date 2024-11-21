@@ -1,23 +1,20 @@
-.footer{
+.footer {
     background-color: #222;
     color: #fff;
     padding: 1em;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
-    position:end;
-}
-
-.social_list{
+  }
+  
+  .social_list {
     display: flex;
     justify-content: center;
     list-style-type: none;
-}
-
+    padding: 0; /* Remover padding padrão */
+  }
 .social_list li{
     margin: 0 1em;
 }

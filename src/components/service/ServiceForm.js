@@ -8,7 +8,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
 
     function submit(e) {
         e.preventDefault()
-        projectData.services.push(service) // Certifique-se de que "services" está no plural
+        projectData.services.push(service) 
         handleSubmit(projectData)
     }
 
@@ -35,7 +35,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
             <Input
                 type="text"
                 text="Descrição do serviço"
-                name="description" // Corrigido o nome para "description"
+                name="description" 
                 placeholder="Descreva o serviço"
                 handleOnChange={handleChange}
             />

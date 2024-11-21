@@ -1,3 +1,5 @@
+/* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO PRINCIPAL */
+
 .navbar{
     display: flex;
     justify-content: space-between;
