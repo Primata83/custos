@@ -172,7 +172,7 @@ function Project() {
                             <div className={styles.project_info}>
                                 {showServiceForm && <ServiceForm
                                     handleSubmit={createService}
-                                    textBtn="Adicionar Serviço"
+                                    btnText="Adicionar Serviço"
                                     projectData={project}
                                 />}
                             </div>

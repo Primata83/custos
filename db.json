@@ -14,6 +14,12 @@
           "cost": "10",
           "description": "fiz isso aqui",
           "id": "89bab449-4f2c-49a3-b804-07eff24f2e28"
+        },
+        {
+          "name": "teste",
+          "cost": "123",
+          "description": "osso duro",
+          "id": "8378ddd0-fab0-4435-852a-bb5125568383"
         }
       ],
       "id": 8
@@ -27,24 +33,6 @@
       "cost": 0,
       "services": [],
       "id": 11
-    },
-    {
-      "name": "teste2",
-      "budget": "22222",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": null,
-      "services": [
-        {
-          "name": "teste2",
-          "cost": "22222",
-          "description": "osso grande",
-          "id": "1288e8ed-0ddf-49e2-9aa5-ee70f6a3aed7"
-        }
-      ],
-      "id": 12
     },
     {
       "cost": 0,
@@ -64,6 +52,35 @@
       "cost": 0,
       "services": [],
       "id": 16
+    },
+    {
+      "name": "teste3",
+      "budget": "12345",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 122,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "122",
+          "description": "fiz isso aqui",
+          "id": "3ee7721e-5d6a-4f6c-85bb-cf6109a8ab5a"
+        }
+      ],
+      "id": 17
+    },
+    {
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "name": "teste3",
+      "budget": "33333",
+      "cost": 0,
+      "services": [],
+      "id": 18
     }
   ],
   "categories": [

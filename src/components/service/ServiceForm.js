@@ -1,12 +1,12 @@
 import { useState } from "react";
-
 import Input from "../form/Input";
 import SubmitButton from "../form/SubmitButton";
-
 import styles from "../project/ProjectForm.module.css";
 
 function ServiceForm({ handleSubmit, btnText, projectData }) {
   const [service, setService] = useState({});
+
+  console.log('btnText:', btnText)
 
   function submit(e) {
     e.preventDefault();
@@ -43,10 +43,9 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
         placeholder="Descreva o serviço"
         handleOnChange={handleChange}
       />
-      <SubmitButton text={btnText} />
+      <SubmitButton text={btnText} />      
     </form>
-  );
-  
+  );  
 }
 
 export default ServiceForm;
