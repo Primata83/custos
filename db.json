@@ -2,13 +2,20 @@
   "projects": [
     {
       "name": "teste3",
-      "budget": "3333",
+      "budget": "33333",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": null,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "10",
+          "description": "fiz isso aqui",
+          "id": "89bab449-4f2c-49a3-b804-07eff24f2e28"
+        }
+      ],
       "id": 8
     },
     {
@@ -23,7 +30,7 @@
     },
     {
       "name": "teste2",
-      "budget": "222",
+      "budget": "22222",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -34,14 +41,46 @@
     },
     {
       "name": "teste",
-      "budget": "1",
+      "budget": "33333",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
+      "cost": 12111,
+      "services": [
+        {
+          "name": "Hudson Cleiton de Paula",
+          "cost": "11111",
+          "description": "alguma coisas",
+          "id": "0884f09f-ca25-4022-8abd-b721b1208b91"
+        },
+        {
+          "name": "teste",
+          "cost": "1000",
+          "description": "osso duro",
+          "id": "b5185a7c-2e2a-4162-855a-ba9f917b6dda"
+        }
+      ],
+      "id": 13
+    },
+    {
       "cost": 0,
       "services": [],
-      "id": 13
+      "id": 14
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 15
+    },
+    {
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 16
     }
   ],
   "categories": [
