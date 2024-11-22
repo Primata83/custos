@@ -36,32 +36,15 @@
         "name": "Desenvolvimento"
       },
       "cost": null,
-      "services": [],
-      "id": 12
-    },
-    {
-      "name": "teste",
-      "budget": "33333",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 12111,
       "services": [
         {
-          "name": "Hudson Cleiton de Paula",
-          "cost": "11111",
-          "description": "alguma coisas",
-          "id": "0884f09f-ca25-4022-8abd-b721b1208b91"
-        },
-        {
-          "name": "teste",
-          "cost": "1000",
-          "description": "osso duro",
-          "id": "b5185a7c-2e2a-4162-855a-ba9f917b6dda"
+          "name": "teste2",
+          "cost": "22222",
+          "description": "osso grande",
+          "id": "1288e8ed-0ddf-49e2-9aa5-ee70f6a3aed7"
         }
       ],
-      "id": 13
+      "id": 12
     },
     {
       "cost": 0,

@@ -43,10 +43,10 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
         placeholder="Descreva o serviço"
         handleOnChange={handleChange}
       />
-
       <SubmitButton text={btnText} />
     </form>
   );
+  
 }
 
 export default ServiceForm;
