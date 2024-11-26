@@ -1,3 +1,7 @@
+@@@@@ "json-server --watch db.json --port 5000" RODE O BACKEND, ANTES DE INICIAR SERVIDOR DO PROJETO.
+@@@@@ "json-server --watch db.json --port 5000" RODE O BACKEND, ANTES DE INICIAR SERVIDOR DO PROJETO.
+@@@@@ "json-server --watch db.json --port 5000" RODE O BACKEND, ANTES DE INICIAR SERVIDOR DO PROJETO.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

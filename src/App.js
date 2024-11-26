@@ -30,6 +30,3 @@ function App() {
 }
 
 export default App
-//" json-server --watch db.json --port 5000 " antes de iniciar a aplicação com npm start no projeto
-//" json-server --watch db.json --port 5000 " antes de iniciar a aplicação com npm start no projeto
-//" json-server --watch db.json --port 5000 " antes de iniciar a aplicação com npm start no projeto
