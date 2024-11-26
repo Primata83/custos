@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Home.module.css'
 import logo from '../imagens/custos.png'
 import LinkButton from '../layout/LinkButton'
