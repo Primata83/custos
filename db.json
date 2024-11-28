@@ -66,13 +66,20 @@
     },
     {
       "name": "teste2",
-      "budget": "22222222",
+      "budget": "222",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1,
+      "services": [
+        {
+          "name": "teste1",
+          "cost": "1",
+          "description": "teste bala",
+          "id": "3a934a50-536f-4062-b330-acbbe540de8f"
+        }
+      ],
       "id": 20
     }
   ],
