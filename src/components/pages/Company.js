@@ -2,7 +2,7 @@
 import React from 'react'
 
 function Company () {
-    return <h1> Company </h1>    
+    return <h1> Empresa </h1>    
 }
 
 export default Company

@@ -4,8 +4,8 @@
       "name": "teste3",
       "budget": "33333",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
       "cost": null,
       "services": [
@@ -54,33 +54,26 @@
       "id": 16
     },
     {
-      "name": "teste3",
-      "budget": "12345",
+      "name": "test4",
+      "budget": "444444",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "4",
+        "name": "Planejamento"
       },
-      "cost": 122,
-      "services": [
-        {
-          "name": "teste",
-          "cost": "122",
-          "description": "fiz isso aqui",
-          "id": "3ee7721e-5d6a-4f6c-85bb-cf6109a8ab5a"
-        }
-      ],
-      "id": 17
-    },
-    {
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "name": "teste3",
-      "budget": "33333",
       "cost": 0,
       "services": [],
-      "id": 18
+      "id": 19
+    },
+    {
+      "name": "teste2",
+      "budget": "22222222",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 20
     }
   ],
   "categories": [

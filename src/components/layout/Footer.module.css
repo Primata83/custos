@@ -13,19 +13,20 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 0; /* Remover padding padrão */
+    padding: 0; 
   }
 .social_list li{
-    margin: 0 1em;
+    margin: 0 1em;   
 }
 
-.social_list:hover{
+.social_list li:hover{
   color: rgb(255, 140, 0);
+  cursor: pointer;
 }
 
 .social_list svg{
     font-size: 1.5em;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 .copy_right{
