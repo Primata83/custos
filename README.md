@@ -1,6 +1,12 @@
 @@@@@ "json-server --watch db.json --port 5000" RODE O BACKEND, ANTES DE INICIAR SERVIDOR DO PROJETO.
 ____________________________________________________________________________________________________
 
+- Curso de React do canal Hora de Codar. Professor Matheus Battisti
+- Este é um um gerenciador de custos dos projetos nele cadastrado.
+Podendo criar novos projetos, edita-los, incluir serviços adicionais a cada projeto ou exclui-los.
+Usando react-router-dom e API para consumir banco de dados.
+____________________________________________________________________________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
