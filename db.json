@@ -14,12 +14,6 @@
           "cost": "10",
           "description": "fiz isso aqui",
           "id": "89bab449-4f2c-49a3-b804-07eff24f2e28"
-        },
-        {
-          "name": "teste",
-          "cost": "123",
-          "description": "osso duro",
-          "id": "8378ddd0-fab0-4435-852a-bb5125568383"
         }
       ],
       "id": 8
@@ -65,19 +59,19 @@
       "id": 19
     },
     {
-      "name": "teste2",
-      "budget": "222",
+      "name": "teste111",
+      "budget": "111111",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
-      "cost": 1,
+      "cost": 111,
       "services": [
         {
           "name": "teste1",
-          "cost": "1",
-          "description": "teste bala",
-          "id": "3a934a50-536f-4062-b330-acbbe540de8f"
+          "cost": "111",
+          "description": "alterar texto",
+          "id": "7fb6396a-6195-49da-baad-0f83a8ce5e29"
         }
       ],
       "id": 20
